@@ -1,10 +1,11 @@
 import "./App.css";
-import Chat from "./Chat";
+
+import SignIn from "./GoogleSignin/SignIn";
 
 function App() {
   return (
     <div className="App">
-      <Chat />
+      <SignIn />
     </div>
   );
 }
