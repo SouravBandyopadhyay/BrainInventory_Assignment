@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { auth, provider } from "./config";
 import { signInWithPopup } from "firebase/auth";
 import Home from "./Home";
-import { Button } from "antd";
 import Welcome from "../Page/Welcome";
 
 function SignIn() {
