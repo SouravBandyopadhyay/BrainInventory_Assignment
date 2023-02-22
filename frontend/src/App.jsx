@@ -1,11 +1,11 @@
 import "./App.css";
 
-import SignIn from "./GoogleSignin/Signin";
+import Signin from "./GoogleSignin/Signin";
 
 function App() {
   return (
     <div className="App">
-     <SignIn/>
+     <Signin/>
     </div>
   );
 }

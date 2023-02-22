@@ -4,7 +4,7 @@ import { signInWithPopup } from "firebase/auth";
 import Home from "./Home";
 import Welcome from "../Page/Welcome";
 
-function SignIn() {
+function Signin() {
   const [value, setValue] = useState("");
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
@@ -29,4 +29,4 @@ function SignIn() {
     </div>
   );
 }
-export default SignIn;
+export default Signin;
