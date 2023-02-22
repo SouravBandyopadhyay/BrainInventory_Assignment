@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Input, Button, List, notification, Avatar, Badge, Space } from "antd";
 import io from "socket.io-client";
-
 import "./Chat.css";
-
-const socket = io("http://localhost:3000");
+const socket = io("https://braininventory-backend.onrender.com");
 
 function Chat() {
   const [username, setUsername] = useState("");
@@ -21,7 +19,6 @@ function Chat() {
         { username: "", message: `${username} joined the chat!` },
       ]);
     });
-
     socket.on("user left", (username, onlineCount) => {
       setOnlineUsers((users) => users.filter((user) => user !== username));
       setChatMessages((messages) => [
